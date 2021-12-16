@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="{% static '/Student_Registration/CSS/register_style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Register</div>
+        <form action="http://localhost:8000/Student_Registration/signup" method="POST">
+        {% csrf_token %}
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">First Name</span>
+                    <input type="text" name="firstname" placeholder="First Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Last Name</span>
+                    <input type="text" name="lastname" placeholder="Last Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">User Name</span>
+                    <input type="text" name="username" placeholder="User Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">User Email</span>
+                    <input type="email" name="useremail" placeholder="User Email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="password" name="password1" placeholder="Password" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">First Name</span>
+                    <input type="password" name="password2" placeholder="Confirm Password" required>
+                </div>
+            </div>
+            <div class="gender-details">
+
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"><input type="radio" name="gender" id="dot-1"></span>
+                        <span class="gender">Male</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"><input type="radio" name="gender" id="dot-2"></span>
+                        <span class="gender">Female</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"><input type="radio" name="gender" id="dot-3"></span>
+                        <span class="gender">Other</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

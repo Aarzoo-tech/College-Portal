@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static '/Student_Registration/CSS/homestyle.css' %}">
+</head>
+<body>
+    <div id="top">
+        <h1 class="logo">SHERSHAH COLLEGE SASARAM</h1>
+    </div>
+    <div id="header">
+        <img src="{% static '/Student_Registration/IMG/shershah7 (2).png' %}" alt="Header" height="200">
+    </div>
+    <div id="menu">
+        <i class="fas fa-users"></i>
+        <a href="" class="menuitems">Home</a>
+        <a href="" class="menuitems">About</a>
+        <a href="http://localhost:8000/Student_Registration/teacher-join" class="menuitems">Joining</a>
+        <a href="" class="menuitems">Admission</a>
+        <a href="http://localhost:8000/Student_Registration/teacher-list" class="menuitems">Teachers</a>
+        <a href="" class="menuitems">Students</a>
+        <a href="http://localhost:8000/Student_Registration/login" class="buttons">Login</a>
+        <a href="http://localhost:8000/Student_Registration/signup" class="buttons">Register</a>
+    </div>
+    <div id="leftbar"></div>
+    <div id="main">
+    <h2>WELCOME TO SHERSHAH COLLEGE SASARAM PORTAL</h2>
+    {% for message in messages %}
+    {{message}}
+    {% endfor %}
+    {% if user.is_authenticated %}
+    <h3>{{fname}}</h3>
+    <h4>You are successfully logged in</h4>
+    {% endif %}
+    </div>
+    <div id="footer">
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+        <a href=""><i class="fab fa-whatsapp"></i></a>
+        <a href=""><i class="fab fa-twitter-square"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-facebook-messenger"></i></a>
+        <a href=""><i class="fas fa-wifi"></i></a>
+        <a href="http://localhost:8000/Student_Registration/logout"><i class="fas fa-user-lock"></i></a>
+    </div>
+</body>
+</html>

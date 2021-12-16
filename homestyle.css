@@ -1,0 +1,153 @@
+*
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#top
+{
+    width: 100%;
+    border: 2px solid #8a7962;
+    min-height: 50px;
+    background-color: #8a7962;
+    box-shadow: 0 0.3rem 0.5rem #8a7962;
+}
+#header
+{
+    width: 100%;
+    min-height: 200px;
+    margin-top: 10px;
+}
+#menu
+{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    border: 2px solid #8a7962;
+    width: 100%;
+    min-height: 40px;
+    margin-top: 10px;
+    background-color: #8a7962;
+    box-shadow: 0 0.3rem 0.5rem #8a7962;
+}
+#leftbar
+{
+    background-image: url("/static/Student_Registration/IMG/artculture (2).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%;
+    min-height: 400px;
+    margin-top: 10px;
+    float: left;
+}
+#main
+{
+    background-image: url("/static/Student_Registration/IMG/classroom (2).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 78.6%;
+    min-height: 400px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+#footer
+{
+    background-color: #8a7962;
+    box-shadow: 0 0.3rem 0.5rem #8a7962;
+    width: 100%;
+    border: 2px solid #8a7962;
+    min-height: 100px;
+    clear: both;
+}
+.menuitems
+{
+    width: 80px;
+    padding: 10px;
+    text-align: center;
+    color:rgba(235, 227, 227, 0.904);
+    text-decoration: none;
+    text-shadow: 0 0.5rem 1rem rgba(0,0,0,0.4);
+    font-weight: bold;
+}
+a.menuitems:hover
+{
+    color:black;
+    font-weight: bold;
+}
+.logo
+{
+    text-transform: uppercase;
+    letter-spacing: 00.2rem;
+    word-spacing: 00.5rem;
+    font-weight: bold;
+    text-align: center;
+    color:rgba(235, 227, 227, 0.904);
+    text-shadow: 0 0.5rem 1rem rgba(0,0,0,0.4);
+}
+#header img
+{
+    width: 100%;
+}
+/*#footer p
+{
+    color:rgba(235, 227, 227, 0.904);
+    white-space: pre-line;
+    text-align: center;
+}*/
+#footer
+{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+#footer .fas
+{
+    color: rgba(235, 227, 227, 0.904);
+    font-size: 2rem;
+    cursor: pointer;
+}
+#footer .fab
+{
+    color: rgba(235, 227, 227, 0.904);
+    font-size: 2rem;
+    cursor: pointer;
+}
+#footer .fab:hover
+{
+    color:black;
+    font-weight: bold;
+}
+#footer .fas:hover
+{
+    color:black;
+    font-weight: bold;
+}
+#menu .fas{
+    color: rgba(235, 227, 227, 0.904);
+    font-size: 2rem;
+    cursor: pointer;
+}
+#menu .fas:hover
+{
+    color: black;
+    font-weight: bold;
+}
+.buttons
+{
+    width: 75px;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0.5rem 1rem rgba(0,0,0,0.4);
+    border: 2px solid linear-gradient(135deg,#9946aa,#46a1eb);
+    border-radius: 25px;
+    color: rgba(235, 227, 227, 0.904);
+    font-weight: bold;
+    box-shadow: 0 0.3rem 0.5rem #8a7962;
+    background-color:#1e7fc0;
+}
+.buttons:hover
+{
+    background-color:#8c399c;
+    font-weight: bold;
+}
